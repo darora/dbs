@@ -1,0 +1,17 @@
+body {
+	font-family: "Helvetica", "Droid Sans", Arial, sans serif;
+	background: url('../images/leather_1.png') 0 0 repeat;
+	margin: 0;
+	padding: 0;
+
+	div#main {
+		margin: 0 80px;
+		padding: 30px;
+		background: rgba(255,255,255, 0.7);
+
+		div#chart_canvas {
+			width: 95%;
+			margin: 30px auto;
+		}
+	}
+}

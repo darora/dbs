@@ -1,0 +1,40 @@
+!!! 5
+html(lang="en")
+  head
+    title Transactions
+    script(type='text/javascript', src='public/javascripts/jquery.min.js')
+    script(type='text/javascript', src='public/javascripts/backbone.js')
+    script(type='text/javascript', src='public/javascripts/jquery.dataTables.min.js')
+    script(type='text/javascript', src='public/javascripts/highcharts.js')
+    script(type='text/javascript', src='public/javascripts/main.js')
+    link(type='text/css', rel='stylesheet', media='all', href='public/stylesheets/bootstrap.css')
+    link(type='text/css', rel='stylesheet', media='all', href='public/stylesheets/style.css')
+    link(type='text/css', rel='stylesheet', media='all', href='public/stylesheets/demo_page.css')
+    link(type='text/css', rel='stylesheet', media='all', href='public/stylesheets/demo_table.css')
+    script(type='text/javascript')
+      $(function() {
+        $('table#example').dataTable();
+      });
+  body
+    div#main
+      #chart_canvas
+      h3 Transaction record
+      #container
+        table#example.display
+          thead
+            tr
+              th Data
+              th Type
+              th Reference Number
+              th Withdrawal Amount
+              th Debit Amount
+          tbody
+          p= items.length
+          each e in items
+            tr
+              td= e['transactionDate']
+              td= e['transactionType']
+              td= e['referenceNumber']
+              td= e['withdrawalAmount']
+              td= e['debitAmount']
+            
