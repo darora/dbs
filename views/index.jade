@@ -4,6 +4,7 @@ html(lang="en")
     title Transactions
     script(type='text/javascript', src='public/javascripts/jquery.min.js')
     script(type='text/javascript', src='public/javascripts/backbone.js')
+    script(type='text/javascript', src='public/javascripts/moment.min.js')
     script(type='text/javascript', src='public/javascripts/jquery.dataTables.min.js')
     script(type='text/javascript', src='public/javascripts/highcharts.js')
     script(type='text/javascript', src='public/javascripts/main.js')
@@ -29,12 +30,11 @@ html(lang="en")
               th Withdrawal Amount
               th Debit Amount
           tbody
-          p= items.length
-          each e in items
-            tr
-              td= e['transactionDate']
-              td= e['transactionType']
-              td= e['referenceNumber']
-              td= e['withdrawalAmount']
-              td= e['debitAmount']
+            each e in items
+              tr
+                td= e['transactionDate']
+                td= e['transactionType']
+                td= e['referenceNumber']
+                td= e['withdrawalAmount']
+                td= e['debitAmount']
             

@@ -10,3 +10,9 @@ body {
     body div#main div#chart_canvas {
       width: 95%;
       margin: 30px auto; }
+    body div#main #container {
+      padding-top: 30px; }
+      body div#main #container label select, body div#main #container label input {
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px; }

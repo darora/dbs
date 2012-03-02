@@ -1,5 +1,5 @@
 dbs ?= {}
-
+db = global.db
 dbs.indexHandler = (req, res) ->
 	# locals = message: "Express + Haml working", pageTitle: "Express and Jade", youAreUsingJade: true
 	# res.render 'index.jade', {locals: locals, layout: null}

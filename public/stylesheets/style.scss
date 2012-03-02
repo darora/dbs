@@ -12,6 +12,17 @@ body {
 		div#chart_canvas {
 			width: 95%;
 			margin: 30px auto;
+
+		}
+		#container {
+			padding-top: 30px;
+
+			label select, label input {
+				display: inline;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			
 		}
 	}
 }
